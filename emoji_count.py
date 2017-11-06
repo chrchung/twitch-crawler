@@ -1,22 +1,35 @@
 import json
 
-log = json.loads(open('chatlogs.txt'), 'r')
-
+filenames = [""]
 
 channels = {}
 
-for message in json:
 
-    if message[channel] not in channels:
-        channels[channel] = {'in': 0, 'out': 0}
+def get_count(message, chain, pointer):
+        if ':)' not in message['message'] and !message['user']['turbo']:
+            return 0
+        
+        user = message['user']['username']
 
-    count = get_count(message)
+        for i in range(0, 10):
+            if ':)' in chain[pointer]['message'] and chain[pointer]['user']['username'] != user:
+                return 1
 
-    if count == 'in':
-        channels[channel]['in'] += 1
-    elif count == 'out':
-        channels[channel]['out'] += 1
+            pointer += 1
+            
+    
+for file in filename:
+    pointer = 0
+    log = json.loads(open(file), 'r')
+
+    for message in json:
+        pointer += 1
+        if message[channel] not in channels:
+            channels[channel] = 0
+
+        channels[channel] += get_count(message)
+
 
 
 print(channels)
-                    
+                        

@@ -35,7 +35,7 @@ client.on('chat', function(channel, user, message, self) {
     console.log(parsedMessage);
 
 
-    fs.appendFile('chatlog.txt', parsedMessage, function (err, data) {
+    fs.appendFile(channel + '.txt', parsedMessage, function (err, data) {
         if (err) {
             return console.log(err);
         }
