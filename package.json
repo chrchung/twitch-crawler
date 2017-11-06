@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/chrchung/twitch-crawler#readme",
   "dependencies": {
+    "fs": "0.0.1-security",
     "tmi.js": "^1.2.1"
   }
 }
