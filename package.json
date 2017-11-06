@@ -1,0 +1,22 @@
+{
+  "name": "twitch-crawler",
+  "version": "1.0.0",
+  "description": "Fetches messages from Twitch chat logs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrchung/twitch-crawler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrchung/twitch-crawler/issues"
+  },
+  "homepage": "https://github.com/chrchung/twitch-crawler#readme",
+  "dependencies": {
+    "tmi.js": "^1.2.1"
+  }
+}
